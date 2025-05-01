@@ -1,16 +1,17 @@
-## Hi there 👋
+# 🌐 Nexus - Vendas de Host
 
-<!--
-**JulioDev-Script/JulioDev-Script** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+Projeto desenvolvido para oferecer serviços de hospedagem de forma moderna e simples. Criado com foco em praticidade e design direto ao ponto.
 
-Here are some ideas to get you started:
+## 🚀 Tecnologias utilizadas
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+- HTML5
+- CSS3
+- JavaScript
+
+## 📦 Como acessar
+
+Este projeto está hospedado no GitHub.  
+Você pode clonar o repositório ou baixar o `.zip` e abrir o arquivo `index.html` no navegador.
+
+```bash
+git clone https://github.com/seu-usuario/nexus.git
