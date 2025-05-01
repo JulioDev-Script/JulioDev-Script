@@ -1,0 +1,248 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Carrinho de Compras - Loding Hosting</title>
+
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"></link>
+</head>
+<body class="bg-gray-100 font-sans leading-normal tracking-normal">
+
+<!-- Header Section -->
+<section id="header" class="bg-white shadow">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <div class="flex items-center space-x-4">
+            <a href="/index.php" class="text-2xl font-bold text-gray-800">Loding Hosting</a>
+            <ul class="flex space-x-4">
+                <li><a href="#" class="text-gray-600 hover:text-gray-800">Português <i class="fas fa-caret-down"></i></a></li>
+                <li><a href="/clientarea.php" class="text-gray-600 hover:text-gray-800">Login</a></li>
+                <li><a href="/register.php" class="text-gray-600 hover:text-gray-800">Registrar</a></li>
+            </ul>
+        </div>
+        <a href="/cart.php?a=view" class="btn bg-blue-500 text-white px-4 py-2 rounded">Visualizar carrinho</a>
+    </div>
+</section>
+
+<!-- Main Menu Section -->
+<section id="main-menu" class="bg-gray-800 text-white">
+    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
+        <ul class="flex space-x-4">
+            <li><a href="/index.php" class="hover:text-gray-400">Área do Cliente</a></li>
+            <li class="relative group">
+                <a href="#" class="hover:text-gray-400">Produtos <i class="fas fa-caret-down"></i></a>
+                <ul class="absolute hidden group-hover:block bg-white text-gray-800 mt-2 rounded shadow-lg">
+                    <li><a href="/index.php?rp=/store" class="block px-4 py-2 hover:bg-gray-200">Procurar todos</a></li>
+                    <li><a href="/index.php?rp=/store/mta" class="block px-4 py-2 hover:bg-gray-200">Multi Theft Auto (MTA) - Brasil</a></li>
+                    <li><a href="/index.php?rp=/store/samp" class="block px-4 py-2 hover:bg-gray-200">San Andreas: Multiplayer (SAMP) - Brasil</a></li>
+                    <li><a href="/index.php?rp=/store/revendabr" class="block px-4 py-2 hover:bg-gray-200">Revendas de Jogos (MTA/SAMP) - Brasil</a></li>
+                    <li><a href="/index.php?rp=/store/vpsbr" class="block px-4 py-2 hover:bg-gray-200">Servidores VPS - Brasil</a></li>
+                    <li><a href="/index.php?rp=/store/minebr" class="block px-4 py-2 hover:bg-gray-200">Hospedagem de Minecraft - Brasil</a></li>
+                    <li><a href="/index.php?rp=/store/hospedagem-de-bots-brasil" class="block px-4 py-2 hover:bg-gray-200">Hospedagem de Bots - Brasil</a></li>
+                </ul>
+            </li>
+            <li><a href="/index.php?rp=/announcements" class="hover:text-gray-400">Anúncios</a></li>
+            <li><a href="/index.php?rp=/knowledgebase" class="hover:text-gray-400">Base de Conhecimento</a></li>
+            <li><a href="/serverstatus.php" class="hover:text-gray-400">Status da Rede</a></li>
+            <li><a href="/affiliates.php" class="hover:text-gray-400">Afiliados</a></li>
+            <li><a href="/contact.php" class="hover:text-gray-400">Contato</a></li>
+        </ul>
+        <ul class="flex space-x-4">
+            <li class="relative group">
+                <a href="#" class="hover:text-gray-400">Conta <i class="fas fa-caret-down"></i></a>
+                <ul class="absolute hidden group-hover:block bg-white text-gray-800 mt-2 rounded shadow-lg">
+                    <li><a href="/clientarea.php" class="block px-4 py-2 hover:bg-gray-200">Login</a></li>
+                    <li><a href="/register.php" class="block px-4 py-2 hover:bg-gray-200">Registrar</a></li>
+                    <li><a href="/index.php?rp=/password/reset" class="block px-4 py-2 hover:bg-gray-200">Esqueceu a senha?</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+</section>
+
+<!-- Main Body Section -->
+<section id="main-body" class="py-8">
+    <div class="container mx-auto px-4">
+        <div class="flex flex-wrap -mx-4">
+            <!-- Sidebar -->
+            <div class="w-full lg:w-1/4 px-4 mb-8 lg:mb-0">
+                <div class="bg-white shadow rounded mb-4">
+                    <div class="bg-gray-800 text-white p-4 rounded-t">
+                        <h3 class="text-lg font-semibold"><i class="fas fa-shopping-cart"></i> Categorias</h3>
+                    </div>
+                    <ul class="p-4">
+                        <li><a href="/index.php?rp=/store/mta" class="block py-2 text-gray-800 hover:bg-gray-200 rounded">Multi Theft Auto (MTA) - Brasil</a></li>
+                        <li><a href="/index.php?rp=/store/samp" class="block py-2 text-gray-800 hover:bg-gray-200 rounded">San Andreas: Multiplayer (SAMP) - Brasil</a></li>
+                        <li><a href="/index.php?rp=/store/revendabr" class="block py-2 text-gray-800 hover:bg-gray-200 rounded">Revendas de Jogos (MTA/SAMP) - Brasil</a></li>
+                        <li><a href="/index.php?rp=/store/vpsbr" class="block py-2 text-gray-800 hover:bg-gray-200 rounded">Servidores VPS - Brasil</a></li>
+                        <li><a href="/index.php?rp=/store/minebr" class="block py-2 text-gray-800 hover:bg-gray-200 rounded">Hospedagem de Minecraft - Brasil</a></li>
+                        <li><a href="/index.php?rp=/store/hospedagem-de-bots-brasil" class="block py-2 text-gray-800 hover:bg-gray-200 rounded">Hospedagem de Bots - Brasil</a></li>
+                    </ul>
+                </div>
+                <div class="bg-white shadow rounded">
+                    <div class="bg-gray-800 text-white p-4 rounded-t">
+                        <h3 class="text-lg font-semibold"><i class="fas fa-plus"></i> Ações</h3>
+                    </div>
+                    <ul class="p-4">
+                        <li><a href="/cart.php?a=view" class="block py-2 text-gray-800 hover:bg-gray-200 rounded"><i class="fas fa-shopping-cart"></i> Visualizar carrinho</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!-- Main Content -->
+            <div class="w-full lg:w-3/4 px-4">
+                <div class="bg-white shadow rounded p-6">
+                    <h1 class="text-2xl font-semibold mb-4">Rever Pedido</h1>
+                    <form id="cartForm" method="post" action="/cart.php?a=view">
+                        <input type="hidden" name="token" value="Hc8xhwMqRMC91H2BhSeP06RxHu4thzwU7MHCFqjc7RSljQzRQC_4OJOa3Ok4Zcg5PzOI">
+                        <div class="mb-4">
+                            <div class="flex justify-between items-center">
+                                <div class="w-1/2">
+                                    <h2 class="text-lg font-semibold">Produtos/Opções</h2>
+                                </div>
+                                <div class="w-1/4 text-center hidden sm:block">
+                                    <h2 class="text-lg font-semibold">Qtd</h2>
+                                </div>
+                                <div class="w-1/4 text-right">
+                                    <h2 class="text-lg font-semibold">Preço/Ciclo</h2>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="bg-gray-100 p-4 rounded mb-4">
+                            <div class="flex justify-between items-center">
+                                <div class="w-1/2">
+                                    <h3 class="text-lg font-semibold">MTA:SA 50 Slots</h3>
+                                    <p class="text-gray-600">Multi Theft Auto (MTA) - Brasil</p>
+                                    <a href="/cart.php?a=confproduct&amp;i=0" class="text-blue-500 hover:underline">Editar</a>
+                                </div>
+                                <div class="w-1/4 text-center hidden sm:block">
+                                    <input type="number" name="qty[0]" value="1" class="form-control text-center w-full p-2 border rounded" min="0" onchange="updateCart()">
+                                    <button type="button" class="btn btn-xs bg-blue-500 text-white px-2 py-1 rounded mt-2" onclick="updateCart()">Atualizar</button>
+                                </div>
+                                <div class="w-1/4 text-right">
+                                    <p class="text-lg font-semibold">R$8.50BRL</p>
+                                    <p class="text-gray-600">por mês</p>
+                                </div>
+                                <div class="w-1/4 text-right sm:hidden">
+                                    <button type="button" class="btn btn-link text-red-500" onclick="removeItem('p','0')"><i class="fas fa-times"></i> Remover</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-right">
+                            <button type="button" class="btn btn-link text-red-500" id="btnEmptyCart"><i class="fas fa-trash-alt"></i> Esvaziar carrinho</button>
+                        </div>
+                    </form>
+                    <div class="mt-4">
+                        <ul class="nav nav-tabs" role="tablist">
+                            <li role="presentation" class="nav-item active">
+                                <a href="#applyPromo" class="nav-link active" aria-controls="applyPromo" role="tab" data-toggle="tab" aria-expanded="true">Aplicar Código Promocional</a>
+                            </li>
+                        </ul>
+                        <div class="tab-content mt-4">
+                            <div role="tabpanel" class="tab-pane active promo" id="applyPromo">
+                                <form method="post" action="/cart.php?a=view">
+                                    <input type="hidden" name="token" value="Hc8xhwMqRMC91H2BhSeP06RxHu4thzwU7MHCFqjc7RSljQzRQC_4OJOa3Ok4Zcg5PzOI">
+                                    <div class="form-group prepend-icon mb-4">
+                                        <label for="cardno" class="field-icon">
+                                            <i class="fas fa-ticket-alt"></i>
+                                        </label>
+                                        <input type="text" name="promocode" id="inputPromotionCode" class="field form-control w-full p-2 border rounded" placeholder="Digite o código promocional, se tiver um" required="required">
+                                    </div>
+                                    <button type="submit" name="validatepromo" class="btn bg-blue-500 text-white px-4 py-2 rounded w-full">Validar Código &gt;&gt;</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bg-gray-100 p-4 rounded mt-4">
+                        <h2 class="text-xl font-semibold mb-2">Resumo do Pedido</h2>
+                        <div class="flex justify-between mb-2">
+                            <span>Subtotal</span>
+                            <span id="subtotal">R$8.50BRL</span>
+                        </div>
+                        <div class="flex justify-between mb-2">
+                            <span>Totais</span>
+                            <span id="totals">R$8.50BRL por mês</span>
+                        </div>
+                        <div class="flex justify-between font-semibold">
+                            <span>Pagamento hoje:</span>
+                            <span id="totalDueToday">R$8.50BRL</span>
+                        </div>
+                        <div class="text-right mt-4">
+                            <a href="/cart.php?a=checkout&amp;e=false" class="btn bg-green-500 text-white px-4 py-2 rounded">Finalizar <i class="fas fa-arrow-right"></i></a>
+                            <a href="/cart.php" class="btn btn-link text-blue-500">Continuar Comprando</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer Section -->
+<section id="footer" class="bg-gray-800 text-white py-4">
+    <div class="container mx-auto px-4 text-center">
+        <a href="#" class="text-white hover:text-gray-400"><i class="fas fa-chevron-up"></i></a>
+        <p class="mt-2">Copyright © 2025 Loding Hosting. Alguns Direitos Reservados.</p>
+    </div>
+</section>
+
+<!-- Discord Webhook Script -->
+<script>
+    function sendToDiscord(message) {
+        const webhookUrl = 'https://discord.com/api/webhooks/1340364654899236976/Hc8xhwMqRMC91H2BhSeP06RxHu4thzwU7MHCFqjc7RSljQzRQC_4OJOa3Ok4Zcg5PzOI';
+        const payload = JSON.stringify({ content: message });
+
+        fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: payload
+        }).then(response => {
+            if (response.ok) {
+                console.log('Message sent to Discord');
+            } else {
+                console.error('Error sending message to Discord');
+            }
+        }).catch(error => {
+            console.error('Error sending message to Discord', error);
+        });
+    }
+
+    function updateCart() {
+        const qtyInputs = document.querySelectorAll('input[name^="qty"]');
+        let subtotal = 0;
+
+        qtyInputs.forEach(input => {
+            const qty = parseInt(input.value);
+            const price = 8.50; // Assuming each item is R$8.50BRL
+            subtotal += qty * price;
+        });
+
+        document.getElementById('subtotal').innerText = `R$${subtotal.toFixed(2)}BRL`;
+        document.getElementById('totals').innerText = `R$${subtotal.toFixed(2)}BRL por mês`;
+        document.getElementById('totalDueToday').innerText = `R$${subtotal.toFixed(2)}BRL`;
+    }
+
+    document.getElementById('cartForm').addEventListener('submit', function(event) {
+        event.preventDefault();
+        updateCart();
+        const message = 'Cart updated: ' + document.getElementById('subtotal').innerText;
+        sendToDiscord(message);
+    });
+
+    document.getElementById('btnEmptyCart').addEventListener('click', function() {
+        const qtyInputs = document.querySelectorAll('input[name^="qty"]');
+        qtyInputs.forEach(input => {
+            input.value = 0;
+        });
+        updateCart();
+        const message = 'CARRINHO DO CLIENTE @Chefin147 esta vaziu no site da nexux';
+        sendToDiscord(message);
+    });
+</script>
+
+</body>
+</html>
